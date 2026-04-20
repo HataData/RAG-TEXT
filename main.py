@@ -25,7 +25,7 @@ def start_rag_pipeline(pdf_path):
 
 if __name__ == "__main__":
     # 測試：請確保 data 文件夾裡真的有一份論文，並改好檔名
-    sample_pdf = "data/your_paper_name.pdf" 
+    sample_pdf = "data/sample_resume.pdf" 
     if os.path.exists(sample_pdf):
         chunks = start_rag_pipeline(sample_pdf)
         print(f"第一個區塊的內容摘要: {chunks[0].page_content[:100]}...")
